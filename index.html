@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assests/logo.png" type="image/x-icon">
+    <title>Fruit-Brust</title>
+    
+    <!-- Boxicons + DaisyUi setup + tailwind CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customize tailwind css -->
+    <style type="text/tailwindcss">
+        @layer components {
+              .legalbtn{
+                @apply  border-0 px-6 font-bold text-white hover:bg-transparent hover:border-2 hover:border-[#B68C5A] hover:text-[#B68C5A]  bg-[#B68C5A] cursor-pointer
+              }
+            }
+          </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'gramond': ['EB Garamond', 'serif'],
+                },
+
+                screens: {
+                    'sm': '576px',
+                    // => @media (min-width: 576px) { ... }
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                    '2xl': '1400px',
+                    // => @media (min-width: 1400px) { ... }
+
+                },
+                extend: {
+                    screens: {
+                        '3xl': '1920px',
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/47a0c6551b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
