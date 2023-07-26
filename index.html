@@ -287,25 +287,309 @@
 
     <!-- Main section -->
     <main
-        class="max-w-[1920px] px-[20px] 3xl:px-[200px] mx-auto 2xl:px-[150px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[50px] ">
+        class="max-w-[1920px] px-[20px] 3xl:px-[200px] mx-auto 2xl:px-[150px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[50px]">
         <!-- Deal section -->
 
-        <section class="border-2 border-red-600 mt-16">
-            <div class="grid grid-cols-1 justify-center items-center justify-items-center gap-7">
-                <div class="text-center px-8">
-                    <div>
-                        <h1 class="text-center font-bold text-[24px] md:text-[40px] sm:text-[35px]  lg:text-[50px]">Deal of the day</h1>
-                        <p class="textx-[#121212] text-sm mt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <section class="  mt-16 md:mt-40">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center justify-items-center gap-7 lg:justify-between lg:justify-items-start lg:items-center ">
+                <div class="text-center px-8 lg:px-0 lg:text-left">
+                    <div class="">
+                        <h1
+                            class="text-center lg:text-left font-bold text-[24px] md:text-[40px] sm:text-[35px]  lg:text-[50px]">
+                            Deal of the day</h1>
+                        <p class="text-[#121212] text-sm mt-4 md:w-[450px] lg:w-auto">Contrary to popular belief, is not
+                            simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
+                            it over 2000 years old.</p>
                     </div>
                 </div>
 
                 <!-- CoutDawn -->
-                <div class="text-3xl font-extrabold text-[#121212]">
-                    <div>
-                       <span>29 <br><span class="text-sm text-[#121212] font-medium">Days</span></span>
-                       <i class='bx bx-dots-vertical-rounded'></i>
+                <div class="text-3xl md:text-5xl font-extrabold text-[#121212] lg:justify-self-end">
+                    <div class="flex">
+                        <div>
+                            <p>29</p>
+                            <p class="text-sm text-[#121212] font-medium">days</p>
+                        </div>
+                        <span class="pt-1  px-2 "> <i class='bx bx-dots-vertical-rounded'></i></span>
+                        <div>
+                            <p>15</p>
+                            <p class="text-sm text-[#121212] font-medium">Hours</p>
+                        </div>
+                        <span class="pt-1 px-2"> <i class='bx bx-dots-vertical-rounded'></i></span>
+                        <div>
+                            <p>25</p>
+                            <p class="text-sm text-[#121212] font-medium">Minutes</p>
+                        </div>
+                        <span class="pt-1 px-2"> <i class='bx bx-dots-vertical-rounded'></i></span>
+                        <div>
+                            <p>08</p>
+                            <p class="text-sm text-[#121212] font-medium">Seconds</p>
+                        </div>
+                        <!-- <span>29 <br><span class="text-sm text-[#121212] font-medium">Days</span></span>
+                       <i class='bx bx-dots-vertical-rounded'></i> -->
                     </div>
-                </div>    
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="p-10 border border-gray-200 rounded-lg shadow-sm">
+                    <div class="space-y-3">
+                        <img class="mx-auto mb-10" src="./Assests/fruit6.png" alt="">
+
+                        <p class="text-center text-[#121212] text-2xl font-bold">12.90$-18.85$</p>
+                        <hr>
+                        <p class="text-center text-[rgba(18, 18, 18, 0.60)] font-medium">Apples</p>
+                        <div class="text-fruit text-center">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div>
+
+                            <button data-modal-target="popup-modal1" data-modal-toggle="popup-modal1"
+                                class="block mx-auto text-fruit text-[18px] font-bold border-2 border-transparent hover:border-fruit px-4 py-2 rounded-lg"
+                                type="button">
+                                Details
+                            </button>
+
+                            <div id="popup-modal1" tabindex="-1"
+                                class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-full max-w-md max-h-full">
+                                    <div class="relative bg-white rounded-lg shadow">
+                                        <div class="p-6 text-center">
+                                            <div class="space-y-4">
+                                                <img class="mx-auto mb-10" src="./Assests/fruit6.png" alt="">
+
+                                                <p class="text-center text-[#121212] text-2xl font-bold">Apples
+                                                </p>
+                                
+                                                <h3 class="mb-5 text-lg font-normal text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</h3>
+                                                <div class="text-fruit text-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+
+                                                <button data-modal-hide="popup-modal1" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Close
+                                            </button>
+                                                <button data-modal-hide="popup-modal1" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Buy Now
+                                            </button>
+                                           
+
+                                                
+                                            </div>
+                                            
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border border-gray-200 rounded-lg shadow-sm">
+                    <div class="space-y-3">
+                        <img class="mx-auto mb-10" src="./Assests/fruit7.png" alt="">
+
+                        <p class="text-center text-[#121212] text-2xl font-bold">12.90$-18.85$</p>
+                        <hr>
+                        <p class="text-center text-[rgba(18, 18, 18, 0.60)] font-medium">Orange</p>
+                        <div class="text-fruit text-center">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div>
+
+                            <button data-modal-target="popup-modal2" data-modal-toggle="popup-modal2"
+                                class="block mx-auto text-fruit text-[18px] font-bold border-2 border-transparent hover:border-fruit px-4 py-2 rounded-lg"
+                                type="button">
+                                Details
+                            </button>
+
+                            <div id="popup-modal2" tabindex="-2"
+                                class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-full max-w-md max-h-full">
+                                    <div class="relative bg-white rounded-lg shadow">
+                                        <div class="p-6 text-center">
+                                            <div class="space-y-4">
+                                                <img class="mx-auto mb-10" src="./Assests/fruit7.png" alt="">
+
+                                                <p class="text-center text-[#121212] text-2xl font-bold">Orange
+                                                </p>
+                                
+                                                <h3 class="mb-5 text-lg font-normal text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</h3>
+                                                <div class="text-fruit text-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+
+                                                <button data-modal-hide="popup-modal2" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Close
+                                            </button>
+                                                <button data-modal-hide="popup-modal2" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Buy Now
+                                            </button>
+                                           
+
+                                                
+                                            </div>
+                                            
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border border-gray-200 rounded-lg shadow-sm">
+                    <div class="space-y-3">
+                        <img class="mx-auto mb-10" src="./Assests/fruit8.png" alt="">
+
+                        <p class="text-center text-[#121212] text-2xl font-bold">12.90$-18.85$</p>
+                        <hr>
+                        <p class="text-center text-[rgba(18, 18, 18, 0.60)] font-medium">Red Dragon</p>
+                        <div class="text-fruit text-center">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div>
+
+                            <button data-modal-target="popup-modal3" data-modal-toggle="popup-modal3"
+                                class="block mx-auto text-fruit text-[18px] font-bold border-2 border-transparent hover:border-fruit px-4 py-2 rounded-lg"
+                                type="button">
+                                Details
+                            </button>
+
+                            <div id="popup-modal3" tabindex="-3"
+                                class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-full max-w-md max-h-full">
+                                    <div class="relative bg-white rounded-lg shadow">
+                                        <div class="p-6 text-center">
+                                            <div class="space-y-4">
+                                                <img class="mx-auto mb-10" src="./Assests/fruit8.png" alt="">
+
+                                                <p class="text-center text-[#121212] text-2xl font-bold">Red Dragon
+                                                </p>
+                                
+                                                <h3 class="mb-5 text-lg font-normal text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</h3>
+                                                <div class="text-fruit text-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+
+                                                <button data-modal-hide="popup-modal3" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Close
+                                            </button>
+                                                <button data-modal-hide="popup-modal3" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Buy Now
+                                            </button>
+                                           
+
+                                                
+                                            </div>
+                                            
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border border-gray-200 rounded-lg shadow-sm">
+                    <div class="space-y-3">
+                        <img class="mx-auto mb-10" src="./Assests/fruit9.png" alt="">
+
+                        <p class="text-center text-[#121212] text-2xl font-bold">12.90$-18.85$</p>
+                        <hr>
+                        <p class="text-center text-[rgba(18, 18, 18, 0.60)] font-medium">Banana</p>
+                        <div class="text-fruit text-center">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <div>
+
+                            <button data-modal-target="popup-modal4" data-modal-toggle="popup-modal4"
+                                class="block mx-auto text-fruit text-[18px] font-bold border-2 border-transparent hover:border-fruit px-4 py-2 rounded-lg"
+                                type="button">
+                                Details
+                            </button>
+
+                            <div id="popup-modal4" tabindex="-4"
+                                class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                <div class="relative w-full max-w-md max-h-full">
+                                    <div class="relative bg-white rounded-lg shadow">
+                                        <div class="p-6 text-center">
+                                            <div class="space-y-4">
+                                                <img class="mx-auto mb-10" src="./Assests/fruit9.png" alt="">
+
+                                                <p class="text-center text-[#121212] text-2xl font-bold">Banana
+                                                </p>
+                                
+                                                <h3 class="mb-5 text-lg font-normal text-gray-500 ">Professional employees are there for you to pick the most amazing and fresh fruits.</h3>
+                                                <div class="text-fruit text-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+
+                                                <button data-modal-hide="popup-modal4" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Close
+                                            </button>
+                                                <button data-modal-hide="popup-modal4" type="button"
+                                                class="text-white bg-fruit hover:bg-white hover:border-2 hover:border-fruit hover:text-fruit focus:ring-4 focus:outline-none focus:ring-fruit font-medium rounded-lg text-md inline-flex items-center px-5 py-2.5 text-center mr-2">
+                                                Buy Now
+                                            </button>
+                                           
+
+                                                
+                                            </div>
+                                            
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
